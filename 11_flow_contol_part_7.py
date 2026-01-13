@@ -29,3 +29,9 @@ for i in range(4):
       print(' ',end=' ')
   print(end='\n')
 
+sum=0
+for i in range(5):
+  for j in range(i+1):
+    sum+=1
+    print(sum,end=' ')
+  print(end='\n')
