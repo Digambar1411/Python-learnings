@@ -69,3 +69,16 @@ def printTable(x,i=1):
   printTable(x,i)
 # printTable(5)
 # printTable(10)
+
+
+def fibonacci_series(a,b,i=1):
+  if (a+b) < 2:
+    print(a,b,end=' ')
+  if i == 10:
+    return
+  c=a+b
+  print(c,end=' ')
+  a=b
+  b=c
+  fibonacci_series(a,b,i+1)
+fibonacci_series(0,1)
